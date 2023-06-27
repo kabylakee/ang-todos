@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,7 +6,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   background-color: #fff;
@@ -47,16 +46,14 @@ img {
   margin-right: 0.5rem;
   transition: opacity 0.2s ease-in;
   outline: none;
-
-  &:disabled {
-    background: #ccc;
-    color: #000;
-    cursor: not-allowed;
-  }
-
-  &:hover {
-    opacity: 0.8;
-  }
+}
+.btn:disabled {
+  background: #ccc;
+  color: #000;
+  cursor: not-allowed;
+}
+.btn:hover {
+  opacity: 0.8;
 }
 
 .btn.btn-danger {
@@ -67,37 +64,32 @@ img {
 .form-control {
   display: block;
   margin-top: 0.3rem;
-  margin-bottom: .5rem;
-
-  label {
-    display: block;
-    font-weight: bold;
-    font-size: 1rem;
-    margin-bottom: .5rem;
-  }
-
-  input {
-    margin-bottom: 0;
-  }
-
-  .validation {
-    color: red;
-  }
+  margin-bottom: 0.5rem;
+}
+.form-control label {
+  display: block;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.form-control input {
+  margin-bottom: 0;
+}
+.form-control .validation {
+  color: red;
 }
 
 .card {
   padding: 1rem;
   border: #ccc 1px dotted;
   margin: 0.7rem 0;
-
-  p {
-    display: flex;
-    justify-content: space-between;
-
-    span.completed {
-      text-decoration: line-through;
-    }
-  }
+}
+.card p {
+  display: flex;
+  justify-content: space-between;
+}
+.card p span.completed {
+  text-decoration: line-through;
 }
 
 input,
@@ -112,6 +104,7 @@ textarea {
 }
 
 hr {
-  margin: .5rem 0;
+  margin: 0.5rem 0;
 }
 
+/*# sourceMappingURL=styles.css.map */

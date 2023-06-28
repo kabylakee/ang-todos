@@ -52,4 +52,11 @@ export class AppComponent implements OnInit {
         this.loading = false;
       });
   }
+
+  public removeTodo(id: number | undefined): void {
+    this.httpClient.delete<void>(`https://jsonplaceholder.typicode.com/todos/${id}`)
+      .subscribe(() => {
+        this.todos = this.todos.filter(todo => todo.id !== id);
+      })
+  }
 }

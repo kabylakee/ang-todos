@@ -3,10 +3,10 @@
 
   <div class="card">
     <div class="form-control">
-      <input type="text" placeholder="Название">
+      <input type="text" placeholder="Название" [(ngModel)]="todoTitle">
     </div>
-    <button class="btn">Добавить</button>
-    <button class="btn">Загрузить</button>
+    <button class="btn" (click)="addTodo()">Добавить</button>
+    <button class="btn" (click)="uploadTodo()">Загрузить</button>
   </div>
 
   <hr>

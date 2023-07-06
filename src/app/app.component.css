@@ -1,5 +1,8 @@
 p {
   font-size: 1.5rem;
 }
+p.error {
+  color: red;
+}
 
 /*# sourceMappingURL=app.component.css.map */
